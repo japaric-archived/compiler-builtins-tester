@@ -1,0 +1,19 @@
+[package]
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+name = "tester"
+version = "0.1.0"
+
+[dev-dependencies.compiler_builtins]
+default-features = false
+features = ["mem"]
+git = "https://github.com/rust-lang-nursery/compiler-builtins"
+
+[target.thumbv7m-linux-eabi.dev-dependencies.test]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7m-linux-eabi.dev-dependencies.utest-macros]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7m-linux-eabi.dev-dependencies.utest-cortex-m-qemu]
+default-features = false
+git = "https://github.com/japaric/utest"
