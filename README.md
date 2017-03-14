@@ -23,7 +23,7 @@ Go into the `tester` directory and invoke
 `cross test --target arm-unknown-linux-gnueabi` to run the test suite on an
 emulated `std` target, or
 
-`xargo test --target thumbv7m-linux-eabi; qemu-arm
+`xargo test --target thumbv7m-linux-eabi --no-run; qemu-arm
 target/thumbv7m-none-eabi/debug/muldi3-deadbeef`, to run the test suite on an
 emulated `no_std` target.
 

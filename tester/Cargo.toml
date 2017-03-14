@@ -7,6 +7,17 @@ version = "0.1.0"
 default-features = false
 features = ["mem"]
 git = "https://github.com/rust-lang-nursery/compiler-builtins"
+branch = "gh151"
+
+[target.thumbv6m-linux-eabi.dev-dependencies.test]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv6m-linux-eabi.dev-dependencies.utest-macros]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv6m-linux-eabi.dev-dependencies.utest-cortex-m-qemu]
+default-features = false
+git = "https://github.com/japaric/utest"
 
 [target.thumbv7m-linux-eabi.dev-dependencies.test]
 git = "https://github.com/japaric/utest"
@@ -15,5 +26,25 @@ git = "https://github.com/japaric/utest"
 git = "https://github.com/japaric/utest"
 
 [target.thumbv7m-linux-eabi.dev-dependencies.utest-cortex-m-qemu]
+default-features = false
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabi.dev-dependencies.test]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabi.dev-dependencies.utest-macros]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabi.dev-dependencies.utest-cortex-m-qemu]
+default-features = false
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabihf.dev-dependencies.test]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabihf.dev-dependencies.utest-macros]
+git = "https://github.com/japaric/utest"
+
+[target.thumbv7em-linux-eabihf.dev-dependencies.utest-cortex-m-qemu]
 default-features = false
 git = "https://github.com/japaric/utest"
